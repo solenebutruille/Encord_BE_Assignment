@@ -17,7 +17,7 @@ for input in sys.stdin:
             tetris_game.add_piece(p)
         
         print(tetris_game.get_grid_height())
-   #     for row in reversed(tetris_game.grid):
+    #    for row in reversed(tetris_game.grid):
     #        print(row)
 
     except Exception as e:
