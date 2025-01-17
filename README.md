@@ -1,5 +1,20 @@
 # Tetris programming challenge
 
+## Solution
+
+1. Code Location : 
+The code of the program is in tetris_project.
+2. Code Execution : 
+The entry point of the program is app.py and can be run using ` python3 app.py `.
+3. Input data : 
+The code expects on the prompt to receive data representing a sequence of Tetris pieces entering the grid.
+On each line, a comma-separated list of entries is exepcted. Each entry consists  of a single letter representing the shape of the piece (Q, Z, S, T, I, L, or J) and a single-digit representing the column index where the piece enters the grid.
+4. Output data : 
+A single integer for each line of input representing the height of the remaining blocks in the grid after processing all the pieces from that input line.
+5. Generate executable file : 
+In order to generate the executable file, cd into tetris_project and run `pyinstaller --onefile app.py`.
+To run the file in sample_test.py, please add -c on line 27 : ` ["/bin/bash", "-c", ENTRY_POINT] `
+
 ## Instructions
 
 1. Create a private github repository based on [this template](https://github.com/encord-team/backend-assignment), either on github.com or using the [Github CLI](https://cli.github.com/):
@@ -156,17 +171,3 @@ The solution will be evaluated on the following criteria:
 - **Algorithmic complexity**: how does the performance of the submission scale with
   regards to its input
 - **Efficiency**: how efficient is the solution. Our test suite includes test cases that might not fit entirely into memory. The solution is expected to handle multi-gigabyte inputs without running itself out of memory.
-
-## Solution
-
-1. Code Location
-The code of the program is in tetris_project.
-2. Code Execution
-The entry point of the program is app.py and can be run using ` python3 app.py `.
-3. Input data
-The code expects on the prompt to receive data representing a sequence of Tetris pieces entering the grid.
-On each line, a comma-separated list of entries is exepcted. Each entry consists  of a single letter representing the shape of the piece (Q, Z, S, T, I, L, or J) and a single-digit representing the column index where the piece enters the grid.
-4. Output data
-A single integer for each line of input representing the height of the remaining blocks in the grid after processing all the pieces from that input line.
-5. Generate executable file
-In order to generate the executable file, cd into tetris_project and run `pyinstaller --onefile app.py`
